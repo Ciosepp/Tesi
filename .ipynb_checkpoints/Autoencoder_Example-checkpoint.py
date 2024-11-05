@@ -5,7 +5,6 @@
 @author: eliafavarelli
 
 """
-import sys
 
 import numpy as np
 import tensorflow as tf
@@ -27,8 +26,6 @@ def generate_anomalies(n_samples=100):
 
 plt.close('all')
 
-
-print("this is me and the program is runnning :)")
 # Dati di addestramento (solo dati normali)
 X_train = generate_normal_data(1000)
 
