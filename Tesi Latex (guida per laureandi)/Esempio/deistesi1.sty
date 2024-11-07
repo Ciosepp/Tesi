@@ -1,0 +1,134 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{deistesi1}[2002/10/10  Redefines maketitle for D.E.I.S. University of Bologna Thesis and changes oddsidemargin and evensidemargins for easier thesis binding; modified by Franco Callegati from original by Gianluca Gorni]
+\RequirePackage{ifthen}
+\RequirePackage{graphicx}
+\RequirePackage{multicol}
+
+\newcommand{\@facolta}{?}
+\newcommand{\@corsodilaurea}{?}
+\newcommand{\@materia}{?}
+\newcommand{\@titolo}{Senza Titolo}
+\newcommand{\@annoaccademico}{?}
+\newcommand{\@sessione}{?}
+\newcommand{\@relatore}{?}
+\newcommand{\@correlatorea}{?}
+\newcommand{\@correlatoreb}{?}
+\newcommand{\@laureando}{?}
+\newcommand{\@parolechiave}{?}
+\newcommand{\@dedica}{?}
+
+\newcommand{\facolta}[1]{
+  \renewcommand{\@facolta}{#1}}
+\newcommand{\corsodilaurea}[1]{%
+  \renewcommand{\@corsodilaurea}{#1}}
+\newcommand{\materia}[1]{%
+  \renewcommand{\@materia}{#1}}
+\newcommand{\titolo}[1]{%
+  \renewcommand{\@titolo}{\uppercase{#1}}}
+\newcommand{\annoaccademico}[1]{%
+  \renewcommand{\@annoaccademico}{#1}}
+  \newcommand{\sessione}[1]{%
+  \renewcommand{\@sessione}{#1}}
+\newcommand{\relatore}[2][Chiar.mo Prof. Ing.]{%
+  \renewcommand{\@relatore}{#1 \\ \uppercase{#2}}}
+\newcommand{\correlatorea}[2][Dott. Ing.]{%
+  \renewcommand{\@correlatorea}{#1 \\ \uppercase{#2}}}
+\newcommand{\correlatoreb}[2][Prof. Ing.]{%
+  \renewcommand{\@correlatoreb}{#1 \\ \uppercase{#2}}}
+\newcommand{\laureando}[1]{%
+  \renewcommand{\@laureando}{\uppercase{#1}}}
+\newcommand{\parolechiave}[5]{%
+  \renewcommand{\@parolechiave}{#1\\ \bigskip #2\\ \bigskip #3\\ \bigskip #4\\ \bigskip #5}}
+\newcommand{\dedica}[1]{%
+  \renewcommand{\@dedica}{#1}}
+
+\newcommand{\clearemptydoublepage}{\newpage{\pagestyle{empty}%
+  \cleardoublepage}}
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %                                   %
+    %  Formattazione dell'intestazione  %
+    %  della tesi                       %
+    %                                   %
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\renewcommand\maketitle{\begin{titlepage}
+  {
+  \fontfamily{ptm} \selectfont
+  \begin{center}
+  \begin{Large}
+    \uppercase{Alma Mater Studiorum \vskip 0.01cm Universit\`a di Bologna\vskip 0.25cm  Sede di Cesena}
+    \end{Large}\\
+  \rule{9cm}{.4pt}\\
+  \smallskip
+  \begin{large}
+  \uppercase{\@facolta}\\
+  \skip 0.1cm
+  Corso di Laurea in \@corsodilaurea\\
+    \vspace{5ex}
+  {\setlength{\baselineskip}{1.5\baselineskip}
+    \begin{Huge}
+      \@titolo
+    \end{Huge}\\
+  }
+  \vskip 0.5cm
+  Elaborato in\\ \@materia\\
+  \vspace{5ex} 
+  \begin{multicols}{2}
+    \raggedright
+    \emph{Tesi di Laurea di}:\\ \@laureando\\
+    \columnbreak
+    \raggedleft
+    \emph{Relatore}:\\
+    \@relatore\\
+    \emph{Correlatore}:\\
+    \@correlatorea
+    \bigskip
+    \smallskip
+  \end{multicols}
+  %\smallskip
+  \rule{9cm}{.4pt}\\
+  %\smallskip
+  \uppercase{Sessione \@sessione }\\
+  \smallskip
+  \uppercase{Anno Accademico \@annoaccademico}\\
+  \end{large}
+  \end{center}
+  }
+  \clearemptydoublepage
+  \pagestyle{empty}
+  \vspace*{20ex}
+  \begin{LARGE}
+  \begin{center}
+    \textbf{PAROLE CHIAVE}\\ 
+    \vspace{5ex}
+    \@parolechiave
+  \end{center}
+  \end{LARGE}
+  \vfill
+  \clearemptydoublepage
+  \ifthenelse{\equal{\@dedica}{?}}{}{%
+  \pagestyle{empty}
+  \vspace*{10ex}
+  \begin{Large}
+  \begin{flushright}
+    \@dedica
+  \end{flushright}
+  \end{Large}
+  \vfill
+  \clearemptydoublepage}
+\end{titlepage}}
+
+         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+         %  Per facilitare la rilegatura della tesi %
+         %  si cambiano qui i valori dei margini    %
+         %  della pagina                            %
+         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\ifthenelse{\boolean{@twoside}}%
+  {\setlength{\oddsidemargin}{1.5cm}%
+   \setlength{\evensidemargin}{0.5cm}}%
+  {\setlength{\oddsidemargin}{1.00in}%
+   \setlength{\evensidemargin}{1.00in}}
+
+\endinput

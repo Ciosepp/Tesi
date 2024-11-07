@@ -1,0 +1,12 @@
+\babel@toc {italian}{}
+\babel@toc {italian}{}
+\contentsline {chapter}{Introduzione}{1}%
+\contentsline {chapter}{\numberline {1}Algoritmi di Machine Learning}{3}%
+\contentsline {section}{\numberline {1.1}Algoritmi di Classificazione}{3}%
+\contentsline {section}{\numberline {1.2}Classificazione Multiclasse}{5}%
+\contentsline {subsection}{\numberline {1.2.1}One-versus-the-rest classifier}{5}%
+\contentsline {subsection}{\numberline {1.2.2}One-versus-one classifier}{6}%
+\contentsline {subsection}{\numberline {1.2.3}Multi-discriminant function}{6}%
+\contentsline {chapter}{\numberline {2}Conclusioni}{7}%
+\contentsline {chapter}{Elenco Figure}{9}%
+\contentsline {chapter}{Bibliografia}{11}%

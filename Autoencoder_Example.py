@@ -9,7 +9,7 @@ import sys
 
 import numpy as np
 import tensorflow as tf
-from tensorflow.keras import layers, models
+from keras import layers, models
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.metrics import confusion_matrix, accuracy_score, precision_score, recall_score, f1_score
 import seaborn as sns

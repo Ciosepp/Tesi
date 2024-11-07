@@ -1,0 +1,73 @@
+\chapter{Algoritmi di Machine Learning}
+
+Gli \emph{Algoritmi di Machine Learning} trovano interessanti applicazioni in svariati campi e consentono di realizzare classificatori (di cui parleremo in questo elaborato) ma anche stimatori, riconoscitori di pattern e predittori.\\
+Il fattore comune a tutti gli algoritmi di \emph{learning} \`{e} proprio la fase di apprendimento.\\ 
+Durante questa fase l'algoritmo conosce la classe di appartenenza di una misura, o il pattern che deve riconoscere, o il parametro che deve stimare e setta alcuni parametri al fine di minimizzare l'errore commesso durante la stima.\\
+Al termine di questa fase l'algoritmo non conosce pi\`{u} il parametro a priori e cerca di stimarlo al meglio sulla base dell'esperienza acquisita durante la fase di training.\\
+
+\section{Algoritmi di Classificazione}
+Concentriamoci quindi sul sottogruppo di \emph{algoritmi di machine learning} utilizzati per effettuare la classificazione, il cui obiettivo \`{e} quello di assegnare una realizzazione alla classe ad essa pi\`{u} affine e pi\`{u} in particolare di algoritmi di classificazione \emph{lineari}, in cui le separazioni fra le varie classi sono di tipo lineare (figura \ref{Fig:Tassonomia degli algoritmi di Machine Learning}).\\
+Gli algoritmi di classificazione lineare sono molteplici e si \`{e} deciso di concentrare l'analisi su due di essi in particolare:
+
+\begin{itemize}
+	\item Perceptron;
+	\item Logistic Regression.
+\end{itemize}
+
+
+\newpage
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\textwidth]{Immagini/Classificazione}
+	\caption{Tassonomia degli algoritmi di Machine Learning
+		\label{Fig:Tassonomia degli algoritmi di Machine Learning}}
+\end{figure}
+
+
+Definiamo di seguito alcuni parametri, vettori e matrici che saranno utili durante la trattazione degli algoritmi:
+
+\begin{description}
+	\item[x:] Vettore contenente le \emph{features} estratte dalla misura effettuata (ad esempio energia, ritardo, fase, ampiezza massima, ecc.). Il vettore risulter\`{a} essere m-dimensionale, con una dimensione per ogni \emph{feature} e costituir\`{a} un punto di training (o analogamente una realizzazione);
+	\item[X:] Matrice contenente tutti i punti di training, sar\`{a} di dimensioni $N\times M$ con $N$ numero di punti di training; 
+	\item[t:] Vettore target contenente le associazioni fra i punti di training e la classe di appartenenza, fornito all'algoritmo durante la fase di learning. Il vettore conterr\`{a} tanti elementi quante sono le misure utilizzate per la fase di \emph{learning} (m-dimensionale);
+	\item[]p\textbf{:} Elemento contenente la classe di appartenenza predetta;
+	\item[w:] Vettore contenente i pesi calcolati dall'algoritmo in modo da minimizzare l'errore di classificazione, anch'esso di dimensione $N$;
+\end{description}
+
+Definiamo inoltre la funzione discriminante utilizzata per la classificazione al termine della fase di learning, che assume la seguente scrittura: 
+\begin{equation}
+y = \mathbf{w}^T \mathbf{x} + \mathbf{w}_0
+\end{equation}
+con $\mathbf{w}_0$ termine che tiene conto dell'offset dei punti di learning e $\mathbf{w}^T$ vettore dei pesi \textbf{w} trasposto. Il termine $\mathbf{w}_0$ pu\`{o} essere omesso se si effettua una regolazione dell'offset del problema.
+
+
+\newpage
+\section{Classificazione Multiclasse}
+\`{E} doveroso sottolineare come nel caso di classificazione a $K$ classi (con $K>2$) la trattazione si complichi e spesso non sia possibile utilizzare algoritmi che risultavano applicabili nel caso di classificazione a 2 classi (\`{e} il caso ad esempio del \emph{Perceptron}).\\
+In letteratura \cite{Bishop} sono riportati vari approcci per estendere il caso di trattazione binaria al caso di $K$ classi, di seguito ne vediamo riportati alcuni, di cui solo 1 risulta per\`{o} essere efficace.
+
+\subsection{One-versus-the-rest classifier} 
+Questo approccio prevede di scomporre il classificatore a $K$ classi in $K-1$ classificatori a 2 classi e per ogni classe, verificare se la realizzazione \textbf{x} in ingresso \`{e} pi\`{u} affine alla classe k-esima o a tutte le altre (ecco perch\`{e} il nome \emph{one-versus-the-rest}). Purtroppo agendo in questo modo alcune regioni dello spazio delle realizzazioni rimangono non classificate, ci\`{o} significa che se una realizzazione dovesse cadere all'interno di tale regione non si potrebbe assegnare a nessuna classe (figura \ref{Fig:One-verus-the-rest problem}).
+
+\begin{figure}[h]
+	
+	\centering
+	\includegraphics[width=0.9\textwidth]{Immagini/OVTR}
+	\caption{One-verus-the-rest problem
+		\label{Fig:One-verus-the-rest problem}}
+\end{figure}
+
+\subsection{One-versus-one classifier}
+In questo caso si considerano invece tutte le possibili coppie di classi e si realizza un classificatore a 2 classi per ciascuna coppia di esse. Agendo in questo modo per\`{o}, oltre ad avere un numero molto elevato di classificatori a 2 classi nel caso di $K$ elevato (le possibili coppie di $K$ classi sono $K(K-1)/2$), si ha anche il problema della sovrapposizione di pi\`{u} classi in alcune regioni dello spazio delle realizzazioni, in tali aree non sar\`{a} dunque possibile risalire alla classe di appartenenza della realizzazione (figura \ref{Fig:One-versus-one problem}).
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.8\textwidth]{Immagini/OVO}
+	\caption{One-versus-one problem
+		\label{Fig:One-versus-one problem}}
+\end{figure}
+
+\subsection{Multi-discriminant function}
+L'approccio che consente di eliminare ambiguit\`{a} o regioni di spazio non classificate \`{e} quello di utilizzare una funzione discriminante per ciascuna classe ($y_k$), dopodich\'{e} si cerca la classe $k$ che massimizza $y_k$ cos\`{\i} facendo si trova la classe pi\`{u} affine alla realizzazione \textbf{x} ovvero si assegna in maniera esclusiva ogni punto dello spazio ad una classe. Le separazioni delle varie classi saranno quei punti nello spazio delle realizzazioni ove $y_k$ ha valori uguali per almeno 2 valori di $k$ (confine fra 2 classi).
+

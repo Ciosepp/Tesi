@@ -1,0 +1,101 @@
+\documentclass[12pt,a4paper,twoside,openright]{book}
+\usepackage{graphics}
+\usepackage{fancyhdr}
+\usepackage[latin1]{inputenc}
+\usepackage{amsmath,amsfonts,amssymb,amsthm}
+\usepackage{epsfig}
+\usepackage{deistesi1}
+\usepackage{graphicx}
+\usepackage{verbatim}
+\usepackage{fancyvrb}
+\usepackage[italian]{babel}
+
+
+
+
+               %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+               % Scelta delle dimensioni della pagina %
+               %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+               %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+               %  Informazioni generali sulla Tesi  %
+               %    da usare nell'intestazione      %
+               %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\frontmatter
+\pagestyle{empty}
+
+\titolo{\Huge ALGORITMI DI MACHINE LEARNING PER IL RICONOSCIMENTO VOCALE} \laureando{Elia Favarelli}
+\annoaccademico{2016--2017} 
+\sessione{II} 
+\facolta{Scuola di Ingegneria ed Architettura} 
+\corsodilaurea {Ingegneria Elettronica e Telecomunicazioni per l'Energia}
+\materia{Elaborazione Numerica dei Segnali LM} 
+\relatore[Prof. Ing.]{Andrea Giorgetti} 
+\correlatorea[Chiar.mo Prof. Ing.]{Marco Chiani}
+\parolechiave{Machine Learning}{Voice Recognition}{Perceptron}{Logistic Regression}{MATLAB}
+
+
+
+
+\pagestyle{fancy}
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+\fancyhf{} \fancyhead[LE,RO]{\bfseries\thepage}
+\fancyhead[LO]{\bfseries\rightmark}
+\fancyhead[RE]{\bfseries\leftmark}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0.5pt}
+
+
+%\addtolength{\voffset}{-5mm} \addtolength{\headsep}{5mm}
+%\addtolength{\oddsidemargin}{8mm}
+%\addtolength{\evensidemargin}{-8mm}
+%\renewcommand{\topmargin}{0pt}
+%\addtolength{\headheight}{3pt} \addtolength{\textheight}{10mm}
+%\addtolength{\footskip}{10mm}
+%
+%\linespread{1.25}
+
+
+\begin{document}
+
+\frontmatter
+
+\maketitle
+
+\tableofcontents
+
+\mainmatter
+
+\input{Introduzione.tex}
+
+\clearemptydoublepage
+
+\pagestyle{fancy}
+\input{Capitolo1.tex}
+%\input{Capitolo2.tex}
+%\input{Capitolo3.tex}
+%\input{Capitolo4.tex}
+%\input{Capitolo5.tex}
+%\input{Capitolo6.tex}
+%\input{Capitolo7.tex}
+
+
+\input{Conclusioni.tex}
+
+\backmatter
+
+\listoffigures
+\addcontentsline{toc}{chapter}{Elenco Figure}
+
+\input{Bibliografia.tex}
+%\input{Ringraziamenti.tex}
+
+\pagestyle{empty}
+\cleardoublepage
+
+\end{document}

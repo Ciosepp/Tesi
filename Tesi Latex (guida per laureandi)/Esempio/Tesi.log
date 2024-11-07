@@ -1,0 +1,583 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300) (preloaded format=pdflatex 2020.3.5)  5 MAR 2020 15:47
+entering extended mode
+**./Tesi.tex
+(Tesi.tex
+LaTeX2e <2020-02-02> patch level 5
+L3 programming layer <2020-03-03>
+("/Users/eliafavarelli/Library/Application Support/MiKTeX/texmfs/install/tex/la
+tex/base/book.cls"
+Document Class: book 2019/12/20 v1.4l Standard LaTeX document class
+
+("/Users/eliafavarelli/Library/Application Support/MiKTeX/texmfs/install/tex/la
+tex/base/bk12.clo"
+File: bk12.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+)
+\c@part=\count167
+\c@chapter=\count168
+\c@section=\count169
+\c@subsection=\count170
+\c@subsubsection=\count171
+\c@paragraph=\count172
+\c@subparagraph=\count173
+\c@figure=\count174
+\c@table=\count175
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen134
+)
+("/Users/eliafavarelli/Library/Application Support/MiKTeX/texmfs/install/tex/la
+tex/graphics/graphics.sty"
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+
+("/Users/eliafavarelli/Library/Application Support/MiKTeX/texmfs/install/tex/la
+tex/graphics/trig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+("/Users/eliafavarelli/Library/Application Support/MiKTeX/texmfs/install/tex/la
+tex/graphics-cfg/graphics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+
+("/Users/eliafavarelli/Library/Application Support/MiKTeX/texmfs/install/tex/la
+tex/graphics-def/pdftex.def"
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+("/Users/eliafavarelli/Library/Application Support/MiKTeX/texmfs/install/tex/la
+tex/fancyhdr/fancyhdr.sty"
+Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
+s
+\f@nch@headwidth=\skip49
+\f@nch@O@elh=\skip50
+\f@nch@O@erh=\skip51
+\f@nch@O@olh=\skip52
+\f@nch@O@orh=\skip53
+\f@nch@O@elf=\skip54
+\f@nch@O@erf=\skip55
+\f@nch@O@olf=\skip56
+\f@nch@O@orf=\skip57
+)
+("/Users/eliafavarelli/Library/Application Support/MiKTeX/texmfs/install/tex/la
+tex/base/inputenc.sty"
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks15
+\inpenc@posthook=\toks16
+
+("/Users/eliafavarelli/Library/Application Support/MiKTeX/texmfs/install/tex/la
+tex/base/latin1.def"
+File: latin1.def 2018/08/11 v1.3c Input encoding file
+))
+("/Users/eliafavarelli/Library/Application Support/MiKTeX/texmfs/install/tex/la
+tex/amsmath/amsmath.sty"
+Package: amsmath 2020/01/20 v2.17e AMS math features
+\@mathmargin=\skip58
+
+For additional information on amsmath, use the `?' option.
+
+("/Users/eliafavarelli/Library/Application Support/MiKTeX/texmfs/install/tex/la
+tex/amsmath/amstext.sty"
+Package: amstext 2000/06/29 v2.01 AMS text
+
+("/Users/eliafavarelli/Library/Application Support/MiKTeX/texmfs/install/tex/la
+tex/amsmath/amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks17
+\ex@=\dimen135
+))
+("/Users/eliafavarelli/Library/Application Support/MiKTeX/texmfs/install/tex/la
+tex/amsmath/amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen136
+)
+("/Users/eliafavarelli/Library/Application Support/MiKTeX/texmfs/install/tex/la
+tex/amsmath/amsopn.sty"
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count176
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count177
+\leftroot@=\count178
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count179
+\DOTSCASE@=\count180
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box45
+\strutbox@=\box46
+\big@size=\dimen137
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count181
+\c@MaxMatrixCols=\count182
+\dotsspace@=\muskip16
+\c@parentequation=\count183
+\dspbrk@lvl=\count184
+\tag@help=\toks18
+\row@=\count185
+\column@=\count186
+\maxfields@=\count187
+\andhelp@=\toks19
+\eqnshift@=\dimen138
+\alignsep@=\dimen139
+\tagshift@=\dimen140
+\tagwidth@=\dimen141
+\totwidth@=\dimen142
+\lineht@=\dimen143
+\@envbody=\toks20
+\multlinegap=\skip59
+\multlinetaggap=\skip60
+\mathdisplay@stack=\toks21
+LaTeX Info: Redefining \[ on input line 2859.
+LaTeX Info: Redefining \] on input line 2860.
+)
+("/Users/eliafavarelli/Library/Application Support/MiKTeX/texmfs/install/tex/la
+tex/amsfonts/amsfonts.sty"
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+("/Users/eliafavarelli/Library/Application Support/MiKTeX/texmfs/install/tex/la
+tex/amsfonts/amssymb.sty"
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+)
+("/Users/eliafavarelli/Library/Application Support/MiKTeX/texmfs/install/tex/la
+tex/amscls/amsthm.sty"
+Package: amsthm 2017/10/31 v2.20.4
+\thm@style=\toks22
+\thm@bodyfont=\toks23
+\thm@headfont=\toks24
+\thm@notefont=\toks25
+\thm@headpunct=\toks26
+\thm@preskip=\skip61
+\thm@postskip=\skip62
+\thm@headsep=\skip63
+\dth@everypar=\toks27
+)
+("/Users/eliafavarelli/Library/Application Support/MiKTeX/texmfs/install/tex/la
+tex/graphics/epsfig.sty"
+Package: epsfig 2017/06/25 v1.7b (e)psfig emulation (SPQR)
+
+("/Users/eliafavarelli/Library/Application Support/MiKTeX/texmfs/install/tex/la
+tex/graphics/graphicx.sty"
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+
+("/Users/eliafavarelli/Library/Application Support/MiKTeX/texmfs/install/tex/la
+tex/graphics/keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks28
+)
+\Gin@req@height=\dimen144
+\Gin@req@width=\dimen145
+)
+\epsfxsize=\dimen146
+\epsfysize=\dimen147
+) (deistesi1.sty
+Package: deistesi1 2002/10/10 Redefines maketitle for D.E.I.S. University of Bo
+logna Thesis and changes oddsidemargin and evensidemargins for easier thesis bi
+nding; modified by Franco Callegati from original by Gianluca Gorni
+
+("/Users/eliafavarelli/Library/Application Support/MiKTeX/texmfs/install/tex/la
+tex/base/ifthen.sty"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+("/Users/eliafavarelli/Library/Application Support/MiKTeX/texmfs/install/tex/la
+tex/tools/multicol.sty"
+Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
+\c@tracingmulticols=\count188
+\mult@box=\box47
+\multicol@leftmargin=\dimen148
+\c@unbalance=\count189
+\c@collectmore=\count190
+\doublecol@number=\count191
+\multicoltolerance=\count192
+\multicolpretolerance=\count193
+\full@width=\dimen149
+\page@free=\dimen150
+\premulticols=\dimen151
+\postmulticols=\dimen152
+\multicolsep=\skip64
+\multicolbaselineskip=\skip65
+\partial@page=\box48
+\last@line=\box49
+\maxbalancingoverflow=\dimen153
+\mult@rightbox=\box50
+\mult@grightbox=\box51
+\mult@gfirstbox=\box52
+\mult@firstbox=\box53
+\@tempa=\box54
+\@tempa=\box55
+\@tempa=\box56
+\@tempa=\box57
+\@tempa=\box58
+\@tempa=\box59
+\@tempa=\box60
+\@tempa=\box61
+\@tempa=\box62
+\@tempa=\box63
+\@tempa=\box64
+\@tempa=\box65
+\@tempa=\box66
+\@tempa=\box67
+\@tempa=\box68
+\@tempa=\box69
+\@tempa=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\c@minrows=\count194
+\c@columnbadness=\count195
+\c@finalcolumnbadness=\count196
+\last@try=\dimen154
+\multicolovershoot=\dimen155
+\multicolundershoot=\dimen156
+\mult@nat@firstbox=\box91
+\colbreak@box=\box92
+\mc@col@check@num=\count197
+))
+("/Users/eliafavarelli/Library/Application Support/MiKTeX/texmfs/install/tex/la
+tex/tools/verbatim.sty"
+Package: verbatim 2019/11/10 v1.5r LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks29
+\verbatim@line=\toks30
+\verbatim@in@stream=\read2
+)
+("/Users/eliafavarelli/Library/Application Support/MiKTeX/texmfs/install/tex/la
+tex/fancyvrb/fancyvrb.sty"
+Package: fancyvrb 2020/01/13 v3.5 verbatim text (tvz,hv)
+\FV@CodeLineNo=\count198
+\FV@InFile=\read3
+\FV@TabBox=\box93
+\c@FancyVerbLine=\count199
+\FV@StepNumber=\count266
+\FV@OutFile=\write3
+)
+("/Users/eliafavarelli/Library/Application Support/MiKTeX/texmfs/install/tex/ge
+neric/babel/babel.sty"
+Package: babel 2020/02/28 3.41 The Babel package
+
+("/Users/eliafavarelli/Library/Application Support/MiKTeX/texmfs/install/tex/ge
+neric/babel/switch.def"
+File: switch.def 2020/02/28 3.41 Babel switching mechanism
+)
+*************************************
+* Local config file bblopts.cfg used
+*
+
+("/Users/eliafavarelli/Library/Application Support/MiKTeX/texmfs/install/tex/la
+tex/arabi/bblopts.cfg"
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+("/Users/eliafavarelli/Library/Application Support/MiKTeX/texmfs/install/tex/la
+tex/babel-italian/italian.ldf"
+Language: italian 2019/11/16 v.1.4.03 Italian support for the babel system
+
+("/Users/eliafavarelli/Library/Application Support/MiKTeX/texmfs/install/tex/ge
+neric/babel/babel.def"
+File: babel.def 2020/02/28 3.41 Babel common definitions
+\babel@savecnt=\count267
+\U@D=\dimen157
+
+("/Users/eliafavarelli/Library/Application Support/MiKTeX/texmfs/install/tex/ge
+neric/babel/txtbabel.def")
+\bbl@readstream=\read4
+\bbl@dirlevel=\count268
+)
+
+Package babel Warning: No hyphenation patterns were preloaded for
+(babel)                the language `Italian' into the format.
+(babel)                Please, configure your TeX system to add them and
+(babel)                rebuild the format. Now I will use the patterns
+(babel)                preloaded for \language=0 instead on input line 21.
+
+\it@lettering=\count269
+\it@doublequoteactive=\count270
+\it@ISOcompliance=\count271
+))
+("/Users/eliafavarelli/Library/Application Support/MiKTeX/texmfs/install/tex/la
+tex/etoolbox/etoolbox.sty"
+Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count272
+)
+("/Users/eliafavarelli/Library/Application Support/MiKTeX/texmfs/install/tex/la
+tex/l3backend/l3backend-pdfmode.def"
+File: l3backend-pdfmode.def 2020-02-23 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count273
+\l__pdf_internal_box=\box94
+) (Tesi.aux)
+\openout1 = `Tesi.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+
+("/Users/eliafavarelli/Library/Application Support/MiKTeX/texmfs/install/tex/co
+ntext/base/mkii/supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count274
+\scratchdimen=\dimen158
+\scratchbox=\box95
+\nofMPsegments=\count275
+\nofMParguments=\count276
+\everyMPshowfont=\toks31
+\MPscratchCnt=\count277
+\MPscratchDim=\dimen159
+\MPnumerator=\count278
+\makeMPintoPDFobject=\count279
+\everyMPtoPDFconversion=\toks32
+)
+("/Users/eliafavarelli/Library/Application Support/MiKTeX/texmfs/install/tex/la
+tex/epstopdf-pkg/epstopdf-base.sty"
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+)
+LaTeX Info: Redefining \it@ocap on input line 64.
+LaTeX Info: Redefining \it@ccap on input line 64.
+
+
+File italian.ldf warning: 
+italian.ldf    With OT1 encoding guillemets are poorly faked
+italian.ldf    Use T1 encoding
+italian.ldf    or specify a font with command \CaporaliFrom
+italian.ldf    See the documentation concerning the babel-italian typesetting 
+italian.ldf    on input line 64.
+
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 6
+8.
+
+("/Users/eliafavarelli/Library/Application Support/MiKTeX/texmfs/install/tex/la
+tex/psnfss/ot1ptm.fd"
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+) [1
+
+
+
+
+{/Users/eliafavarelli/Library/Application Support/MiKTeX/texmfs/data/pdftex/con
+fig/pdftex.map}] [2
+
+] [3] [4
+
+] (Tesi.toc
+LaTeX Font Info:    Trying to load font information for U+msa on input line 5.
+
+("/Users/eliafavarelli/Library/Application Support/MiKTeX/texmfs/install/tex/la
+tex/amsfonts/umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 5.
+
+("/Users/eliafavarelli/Library/Application Support/MiKTeX/texmfs/install/tex/la
+tex/amsfonts/umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+))
+\tf@toc=\write4
+\openout4 = `Tesi.toc'.
+
+ [5
+
+]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+Make it at least 14.49998pt.
+We now make it that large for the rest of the document.
+This may cause the page layout to be inconsistent, however.
+
+[6
+
+] (Introduzione.tex
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6--7
+
+ []
+
+
+Overfull \hbox (9.03891pt too wide) in paragraph at lines 8--9
+\OT1/cmr/m/n/12 una buona classificazione delle misure successivamente sottopos
+te all'algoritmo. 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--9
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--11
+
+ []
+
+)
+Overfull \hbox (11.0925pt too wide) in paragraph at lines 12--75
+\OT1/cmr/m/n/12 di \OT1/cmr/m/it/12 learning \OT1/cmr/m/n/12 in cui gli interlo
+cutori comunicano separatamente e dichiaratamente.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--75
+
+ []
+
+[1
+
+] [2
+
+] (Capitolo1.tex
+Capitolo 1.
+
+Overfull \hbox (2.6129pt too wide) in paragraph at lines 3--7
+\OT1/cmr/m/n/12 Gli \OT1/cmr/m/it/12 Algoritmi di Machine Learning \OT1/cmr/m/n
+/12 trovano interessanti applicazioni in svariati
+ []
+
+
+Overfull \hbox (27.734pt too wide) in paragraph at lines 3--7
+\OT1/cmr/m/n/12 Il fattore comune a tutti gli algoritmi di \OT1/cmr/m/it/12 lea
+rning \OT1/cmr/m/n/12 e proprio la fase di apprendimento. 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--7
+
+ []
+
+
+Overfull \hbox (18.53476pt too wide) in paragraph at lines 9--11
+\OT1/cmr/m/n/12 Concentriamoci quindi sul sottogruppo di \OT1/cmr/m/it/12 algor
+itmi di machine learning \OT1/cmr/m/n/12 utilizzati
+ []
+
+
+Overfull \hbox (8.92365pt too wide) in paragraph at lines 9--11
+\OT1/cmr/m/n/12 Gli algoritmi di classificazione lineare sono molteplici e si 
+e deciso di concentrare
+ []
+
+[3
+
+]
+<Immagini/Classificazione.png, id=37, 817.55438pt x 380.92313pt>
+File: Immagini/Classificazione.png Graphic file (type png)
+<use Immagini/Classificazione.png>
+Package pdftex.def Info: Immagini/Classificazione.png  used on input line 22.
+(pdftex.def)             Requested size: 390.0pt x 181.71341pt.
+ [4 <./Immagini/Classificazione.png>]
+Overfull \hbox (6.75005pt too wide) in paragraph at lines 47--49
+\OT1/cmr/m/n/12 In letteratura [[]] sono riportati vari approcci per estendere 
+il caso di trattazione
+ []
+
+<Immagini/OVTR.png, id=45, 361.35pt x 246.1697pt>
+File: Immagini/OVTR.png Graphic file (type png)
+<use Immagini/OVTR.png>
+Package pdftex.def Info: Immagini/OVTR.png  used on input line 56.
+(pdftex.def)             Requested size: 350.99762pt x 239.1186pt.
+[5 <./Immagini/OVTR.png>]
+<Immagini/OVO.png, id=49, 305.64188pt x 238.64156pt>
+File: Immagini/OVO.png Graphic file (type png)
+<use Immagini/OVO.png>
+Package pdftex.def Info: Immagini/OVO.png  used on input line 66.
+(pdftex.def)             Requested size: 312.00119pt x 243.61871pt.
+) (Conclusioni.tex [6 <./Immagini/OVO.png>]
+Capitolo 2.
+
+Overfull \hbox (14.52219pt too wide) in paragraph at lines 2--3
+\OT1/cmr/m/n/12 discretamente, al fine di valutare piu a fondo le prestazioni 
+di questa applicazione
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--3
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
+
+ []
+
+) [7
+
+] [8
+
+] (Tesi.lof)
+\tf@lof=\write5
+\openout5 = `Tesi.lof'.
+
+ (Bibliografia.tex [9
+
+] [10
+
+]) [11] [12
+
+] (Tesi.aux) ) 
+Here is how much of TeX's memory you used:
+ 4299 strings out of 483220
+ 61368 string characters out of 2958188
+ 306547 words of memory out of 3000000
+ 19476 multiletter control sequences out of 15000+200000
+ 548133 words of font info for 65 fonts, out of 3000000 for 9000
+ 0 hyphenation exceptions out of 8191
+ 33i,10n,45p,771b,312s stack positions out of 5000i,500n,10000p,200000b,50000s
+ </Users/eliafavarelli/Library/Application Support/MiKTeX/texmfs/
+data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk>{/Users/eliafavarelli/Libra
+ry/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/base/8r.enc}</User
+s/eliafavarelli/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/p
+ublic/amsfonts/cm/cmbx12.pfb></Users/eliafavarelli/Library/Application Support/
+MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi12.pfb></Users/eliafav
+arelli/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ams
+fonts/cm/cmmi8.pfb></Users/eliafavarelli/Library/Application Support/MiKTeX/tex
+mfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb></Users/eliafavarelli/Libr
+ary/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cm
+r17.pfb></Users/eliafavarelli/Library/Application Support/MiKTeX/texmfs/install
+/fonts/type1/public/amsfonts/cm/cmr8.pfb></Users/eliafavarelli/Library/Applicat
+ion Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></U
+sers/eliafavarelli/Library/Application Support/MiKTeX/texmfs/install/fonts/type
+1/public/amsfonts/cm/cmti12.pfb></Users/eliafavarelli/Library/Application Suppo
+rt/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmtt12.pfb></Users/elia
+favarelli/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/tim
+es/utmr8a.pfb></Users/eliafavarelli/Library/Application Support/MiKTeX/texmfs/i
+nstall/fonts/type1/urw/times/utmri8a.pfb>
+Output written on Tesi.pdf (18 pages, 208128 bytes).
+PDF statistics:
+ 113 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+
