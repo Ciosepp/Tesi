@@ -73,6 +73,7 @@ test_error = compute_reconstruction_error(X_test_scaled, autoencoder)
 
 # Definire una soglia per il rilevamento delle anomalie (ad esempio, il 99° percentile dell'errore sui dati di training)
 threshold = np.percentile(train_error, 99)
+print(threshold)
 
 # Classificare le anomalie
 test_predictions = (test_error > threshold).astype(int)
