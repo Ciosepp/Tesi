@@ -16,10 +16,15 @@ from scipy import signal
 import time
 
 #creazione dataset di elaborazione
-percentAcqTrain = 0.3 # %/100
+percentAcqTrain = 0.4 # %/100
 nSamples = 100
-nPWelch =128
+nPWelch =100
 fs = 100
+
+saveFlag =True
+
+showLoss = False
+showErr = False
 
 # Carica i file .mat
 #data = sio.loadmat('U1_S1_M1load.mat')
@@ -35,7 +40,8 @@ Accelerations = np.zeros((2,2,2,inDataConstrainSize,4))
 for u in range(1,3):
     for s in range(1,3):
         for m in range(1,3):
-            fileName = "C:\\Users\\Ciosep\\Documents\\Tesi\\analisys\\U" + str(u) + "_S" + str(s) + "_M" + str(m) + "load.mat"
+            fileName = "analisys\\U" + str(u) + "_S" + str(s) + "_M" + str(m) + "load.mat"
+
             print(fileName + ' loaded')
             
             data = sio.loadmat(fileName)
@@ -136,7 +142,7 @@ autoencoder = models.Sequential([
     layers.InputLayer(input_shape=(input_dim,)), 
 	layers.Dense(8, activation="relu"),
     layers.Dense(encoding_dim, activation="relu"),
-    layers.Dense(8, activation="relu"),
+    layers.Dense(5, activation="relu"),
     layers.Dense(input_dim, activation="sigmoid")  # Output riconstruito
 ])
 autoencoder.compile(optimizer='adam', loss='mse')
@@ -162,14 +168,15 @@ print(threshold)
 test_predictions = (test_error > threshold).astype(int)
 
 
-# Grafico della loss
-plt.figure()
-plt.plot(history.history['loss'], label='Training Loss')
-plt.plot(history.history['val_loss'], label='Validation Loss')
-plt.xlabel('Epochs')
-plt.ylabel('Loss')
-plt.legend()
-plt.title('Andamento della Loss durante il Training')
+if(showLoss):
+	# Grafico della loss
+	plt.figure()
+	plt.plot(history.history['loss'], label='Training Loss')
+	plt.plot(history.history['val_loss'], label='Validation Loss')
+	plt.xlabel('Epochs')
+	plt.ylabel('Loss')
+	plt.legend()
+	plt.title('Andamento della Loss durante il Training')
 
 '''
 NormalSampletest = np.expand_dims(testData_scaled[0], axis=0)
@@ -211,14 +218,15 @@ plt.show()
 #plt.plot(train_error)
 #plt.plot(test_error)
 '''
-plt.figure()
 
-# Visualizzare i risultati
-plt.hist(test_error, bins=80, alpha=0.4, label='Test Error')
-plt.hist(train_error, bins=80, alpha=0.8, label='Training Error')
-plt.axvline(threshold, color='r', linestyle='--', label='Threshold')
-plt.legend()
-#plt.show()
+if(showErr):
+	# Visualizzare i risultati
+	plt.figure()
+	plt.hist(test_error, bins=80, alpha=0.4, label='Test Error')
+	plt.hist(train_error, bins=80, alpha=0.8, label='Training Error')
+	plt.axvline(threshold, color='r', linestyle='--', label='Threshold')
+	plt.legend()
+
 
 
 # Visualizzare la matrice di confusione
@@ -230,8 +238,9 @@ sns.heatmap(conf_matrix, annot=True, fmt='d', cmap='Blues', xticklabels=['Normal
 plt.title(f"Matrice di Confusione n:{nSamples}  w:{nPWelch}")
 plt.xlabel('Predizioni')
 plt.ylabel('Valori Veri')
-#plt.savefig(f"MC n_{nSamples}  w_{nPWelch}")
-#plt.show()
+if(saveFlag):
+	plt.savefig(f"MC n_{nSamples}  w_{nPWelch}")
+
 
 # Calcolare le metriche di valutazione
 accuracy = accuracy_score(dataLabel, test_predictions)
@@ -271,7 +280,9 @@ plt.xlabel('False Positive Rate')
 plt.ylabel('True Positive Rate')
 plt.title("ROC n:"+str(nSamples)+'  w:'+str(nPWelch))
 plt.legend(loc="lower right")
-#plt.savefig("ROC n"+str(nSamples)+'  w'+str(nPWelch)+".png")
+
+if(saveFlag):
+	plt.savefig(f"ROC n{nSamples} w{nPWelch}.png")
 plt.show()
 
 ##p_fd = np.array(p_fd)
